@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabron</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #111;
+        }
+
+        .container {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .btn,
+        .panel {
+            background-color: #FF4655;
+        }
+
+        .tag {
+            color: #FF4655;
+        }
+
+        .box {
+            background-image: url('img.jpg');
+            background-size: cover;
+        }
+
+        .nav-item {
+            color: rgba(255, 255, 255, .5);
+        }
+
+        .nav-item:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mx-auto pb-8">
+        <!-- start nav -->
+        <nav class="px-8 lg:px-12 py-8 navbar text-white  flex justify-between">
+            <div class="title font-extrabold uppercase text-2xl">Inventaris</div>
+            <div class="nav-items uppercase font-semibold">
+                <a href="#" class="nav-item transition-all mx-4">Home</a>
+                <a href="#" class="nav-item transition-all mx-4">User</a>
+                <a href="#" class="nav-item transition-all mx-4">Supplier</a>
+            </div>
+            <div class="buttons">
+                <a href="login.html" class="px-8 py-2 rounded-xl btn  transition-all focus:ring-4 font-bold">Login</a>
+            </div>
+        </nav>
+        <!-- emd mav -->
+        <!-- banner -->
+        <div class="box bg-white bg-opacity-10 mx-auto lg:mx-24 p-16 rounded-3xl h-96">
+            <div class="text-5xl text-white font-extrabold">New Stuffs</div>
+            <div class="text-xl text-white text-opacity-50 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Beatae, maiores.
+            </div>
+        </div>
+        <!-- panel -->
+        <div
+            class="panel h-auto w-3/4 mx-auto relative bottom-16 rounded-3xl flex justify-between p-8 text-white bg-gradient-to-b from-pink-500 to-red-800">
+            <div class="panel-1 mx-4">
+                <div class="text-opacity-50">Tables</div>
+                <div class="text-4xl font-extrabold text-white ">19.828</div>
+            </div>
+            <div class="panel-1 mx-4">
+                <div class="text-opacity-50">Users</div>
+                <div class="text-4xl font-extrabold text-white ">19.828</div>
+            </div>
+            <div class="panel-1 mx-4">
+                <div class="text-opacity-50">Suppliers</div>
+                <div class="text-4xl font-bold text-white ">19.828</div>
+            </div>
+        </div>
+        <!-- endpanel -->
+        <!-- tables -->
+        <div class="mx-auto px-8">
+            <div class="title mb-4 text-white text-2xl font-bold">
+                <span class="tag">#</span> Tables
+            </div>
+            <div class="wrapper flex justify-center">
+                <div class="item p-6 bg-white bg-opacity-25 rounded-2xl text-white mx-4 w-full">
+                    <div class="font-bold text-3xl">Barang</div>
+                    <div class="mt-2 text-white text-opacity-50">Lorem ipsum dolor sit amet consectetur.</div>
+                    <div class="button mt-16">
+                        <a href="list.html"
+                            class="text-white btn p-2 px-4 rounded-xl flex text-center float-right focus:ring-4 hover:shadow-lg">
+                            <div class="mr-2">See Table</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="item p-6 bg-white bg-opacity-25 rounded-2xl text-white mx-4 w-full">
+                    <div class="font-bold text-3xl">Barang</div>
+                    <div class="mt-2 text-white text-opacity-50">Lorem ipsum dolor sit amet consectetur.</div>
+                    <div class="button mt-16">
+                        <a href="#"
+                            class="text-white btn p-2 px-4 rounded-xl flex text-center float-right focus:ring-4 hover:shadow-lg">
+                            <div class="mr-2">See Table</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="item p-6 bg-white bg-opacity-25 rounded-2xl text-white mx-4 w-full">
+                    <div class="font-bold text-3xl">Barang</div>
+                    <div class="mt-2 text-white text-opacity-50">Lorem ipsum dolor sit amet consectetur.</div>
+                    <div class="button mt-16">
+                        <a href="#"
+                            class="text-white btn p-2 px-4 rounded-xl flex text-center float-right focus:ring-4 hover:shadow-lg">
+                            <div class="mr-2">See Table</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end tables -->
+        <!-- notif -->
+        <div class="mx-auto px-8 mt-20">
+            <div class="title mb-4 text-white text-2xl font-bold">
+                <span class="tag">#</span> Latest Activities
+            </div>
+            <div class="wrapper flex flex-col">
+                <div class="mb-6 p-4 bg-white bg-opacity-25 rounded-xl text-white flex">
+                    <div class="h-16 w-16 rounded-full bg-gradient-to-bl from-pink-400 to-indigo-600"></div>
+                    <div class="py-2 px-4">
+                        <div class="title font-bold text-2xl">Threads</div>
+                        <div class="text-white text-opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Numquam, rerum?
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6 p-4 bg-white bg-opacity-25 rounded-xl text-white flex">
+                    <div class="h-16 w-16 rounded-full bg-gradient-to-bl from-pink-400 to-indigo-600"></div>
+                    <div class="py-2 px-4">
+                        <div class="title font-bold text-2xl">Threads</div>
+                        <div class="text-white text-opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Numquam, rerum?
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6 p-4 bg-white bg-opacity-25 rounded-xl text-white flex">
+                    <div class="h-16 w-16 rounded-full bg-gradient-to-bl from-pink-400 to-indigo-600"></div>
+                    <div class="py-2 px-4">
+                        <div class="title font-bold text-2xl">Threads</div>
+                        <div class="text-white text-opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Numquam, rerum?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end notif -->
+        <!-- footer -->
+        <div class="mx-auto">
+            <div class="wrapper text-white">
+                <div class="text-center">
+                    Made By <a href="#" class="tag">Fahru</a> With ♥
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+    </div>
+</body>
+
+</html>

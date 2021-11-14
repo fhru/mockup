@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #111;
+        }
+
+        .container {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h-screen container mx-auto">
+        <div class="flex h-full text-white p-12 items-center justify-center">
+            <div class="box p-8 w-1/2">
+                <div class="header">
+                    <div class="text-5xl font-extrabold">Inventaris</div>
+                    <div class="text-white uppercase text-opacity-50">SMKN 1 KOTA BEKASI</div>
+                </div>
+                <div class="form mt-10">
+                    <form action="" method="post">
+                        <div class="mb-10">
+                            <input type="text"
+                                class="block w-full rounded-lg px-4 py-3 outline-none text-gray-200 bg-white bg-opacity-25 border-2 border-opacity-25 focus:border-gray-400 transition-all placeholder-white placeholder-opacity-50 focus:ring-4"
+                                name="username" placeholder="Username">
+                        </div>
+                        <div class="mb-10">
+                            <input type="password"
+                                class="block w-full rounded-lg px-4 py-3 outline-none text-gray-200 bg-white bg-opacity-25 border-2 border-opacity-25 focus:border-gray-400 transition-all placeholder-white placeholder-opacity-50 focus:ring-4"
+                                name="password" placeholder="Password">
+                        </div>
+                        <div class="button">
+                            <button type="submit"
+                                class="bg-gradient-to-l from-blue-600 to-pink-800 px-8 py-3 rounded-lg block w-full uppercase font-semibold">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

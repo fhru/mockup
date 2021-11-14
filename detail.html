@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabron</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #111;
+        }
+
+        .container {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .btn,
+        .panel {
+            background-color: #FF4655;
+        }
+
+        .tag {
+            color: #FF4655;
+        }
+
+        .warning {
+            background-color: #FFAA46;
+        }
+
+        .box {
+            background-image: url('img.jpg');
+            background-size: cover;
+        }
+
+        .nav-item {
+            color: rgba(255, 255, 255, .5);
+        }
+
+        .nav-item:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mx-auto pb-8">
+        <!-- start nav -->
+        <nav class="px-8 lg:px-12 py-8 navbar text-white  flex justify-between">
+            <div class="title font-extrabold uppercase text-2xl">Inventaris</div>
+            <div class="nav-items uppercase font-semibold">
+                <a href="#" class="nav-item transition-all mx-4">Home</a>
+                <a href="#" class="nav-item transition-all mx-4">User</a>
+                <a href="#" class="nav-item transition-all mx-4">Supplier</a>
+            </div>
+            <div class="buttons">
+                <a href="login.html" class="px-8 py-2 rounded-xl btn  transition-all focus:ring-4 font-bold">Login</a>
+            </div>
+        </nav>
+        <!-- emd mav -->
+        <div class="mx-auto">
+            <div class="title">
+                <div class="text-center text-white text-opacity-50">Detail</div>
+                <div class="text-5xl text-white text-center font-bold">Barang</div>
+            </div>
+            <div class="content flex p-4 bg-white bg-opacity-25 mt-8 rounded-3xl">
+                <div class="w-1/2 mr-4">
+                    <img src="img.jpg" alt="" class="rounded-2xl" draggable="false">
+                </div>
+                <div class="w-1/2 text-white flex flex-col justify-center">
+                    <div class="title font-bold text-4xl">Nama Barang</div>
+                    <div class="font-extrabold text-xl mt-2">KONDISI <span class="font-normal ml-2">Baik</span></div>
+                    <div class="font-extrabold text-xl mt-2">RUANG <span class="font-normal ml-2">R001</span></div>
+                    <div class="font-extrabold text-xl mt-2">SUPPLIER <span class="font-normal ml-2">SPR001</span></div>
+                    <div class="font-extrabold text-xl mt-2">DESKRIPSI</div>
+                    <div class="font-extrabold text-xl mt-2">STOK</div>
+                    <div class="buttons mt-6 flex">
+                        <a href="#" class="btn w-full mr-4 p-3 font-semibold text-center rounded-xl">Delete</a>
+                        <a href="#" class="warning w-full p-3 font-semibold text-center rounded-xl">Edit</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#"
+                class="bg-white float-right px-6 py-3 rounded-xl mt-4 bg-opacity-25 text-white font-bold">Back</a>
+        </div>
+</body>
+
+</html>

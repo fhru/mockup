@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabron</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #111;
+        }
+
+        .container {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .btn,
+        .panel {
+            background-color: #FF4655;
+        }
+
+        .tag {
+            color: #FF4655;
+        }
+
+        .warning {
+            background-color: #FFAA46;
+        }
+
+        .ungu {
+            background-color: #6B46FF;
+        }
+
+        .box {
+            background-image: url('img.jpg');
+            background-size: cover;
+        }
+
+        .nav-item {
+            color: rgba(255, 255, 255, .5);
+        }
+
+        .nav-item:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mx-auto pb-8">
+        <!-- start nav -->
+        <nav class="px-8 lg:px-12 py-8 navbar text-white  flex justify-between">
+            <div class="title font-extrabold uppercase text-2xl">Inventaris</div>
+            <div class="nav-items uppercase font-semibold">
+                <a href="#" class="nav-item transition-all mx-4">Home</a>
+                <a href="#" class="nav-item transition-all mx-4">User</a>
+                <a href="#" class="nav-item transition-all mx-4">Supplier</a>
+            </div>
+            <div class="buttons">
+                <a href="login.html" class="px-8 py-2 rounded-xl btn  transition-all focus:ring-4 font-bold">Login</a>
+            </div>
+        </nav>
+        <!-- emd mav -->
+        <!-- title -->
+        <div class="mx-auto">
+            <div class="title">
+                <div class="text-5xl mt-6 text-white font-extrabold text-center">Table</div>
+            </div>
+            <div class="flex justify-center">
+                <div class="search mt-6 flex">
+                    <button type="button" class="btn px-4 py-3 rounded-l-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </button>
+                    <input type="text" name="search" id="search" class="rounded-r-lg px-4 outline-none focus:ring-4"
+                        placeholder="Search...">
+                </div>
+            </div>
+        </div>
+        <!-- end title -->
+        <!-- card -->
+        <div class="mx-auto mt-16">
+            <div class="flex justify-center">
+                <!-- card -->
+                <div class="card p-2 bg-white bg-opacity-25 rounded-xl w-60 mx-4">
+                    <div class="card-img">
+                        <img src="img.jpg" alt="" class="w-full rounded-xl">
+                    </div>
+                    <div class="card-text pl-1">
+                        <div class="text-2xl text-white font-bold mt-2">Title</div>
+                        <div class="text-sm text-white text-opacity-50 mt-2">Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                    <div class="button mt-4 flex">
+                        <a href="#"
+                            class="btn flex justify-center items-center text-white rounded-lg bg-red-300 py-2 px-4 mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-trash2-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.037 3.225A.703.703 0 0 1 2 3c0-1.105 2.686-2 6-2s6 .895 6 2a.702.702 0 0 1-.037.225l-1.684 10.104A2 2 0 0 1 10.305 15H5.694a2 2 0 0 1-1.973-1.671L2.037 3.225zm9.89-.69C10.966 2.214 9.578 2 8 2c-1.58 0-2.968.215-3.926.534-.477.16-.795.327-.975.466.18.14.498.307.975.466C5.032 3.786 6.42 4 8 4s2.967-.215 3.926-.534c.477-.16.795-.327.975-.466-.18-.14-.498-.307-.975-.466z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="warning flex justify-center items-center text-white rounded-lg bg-red-300 py-2 px-4 mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-pen-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="ungu flex justify-center items-center text-white rounded-lg bg-red-300 py-2 px-4 w-full">
+                            Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end card -->
+    </div>
+</body>
+
+</html>
